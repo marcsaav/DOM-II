@@ -1,7 +1,10 @@
 // Nav
-let links = document.querySelectorAll('a');
-links.addEventListener('click', (event) => {
-    event.preventDefault();
-})
+let links = document.querySelectorAll('.nav-link');
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+    })
+});
+
 
 
